@@ -1,0 +1,28 @@
+@import url(//db.onlinewebfonts.com/c/229a57bbeef591e04a1fdfe347c90864?family=Centra+No2);
+// @import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+@import "base/animation";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+
+@import "components/imageBox";
+@import "components/common";
+@import "components/button";
+@import "components/jumbotron";
+@import "components/slider";
+
+
+
+
+@import "layout/grid";
+@import "layout/navigation";
+@import "layout/header";
+@import "layout/footer";
+
+
+@import "pages/home";
+// @import "pages/signUp";
+// @import "pages/contact";

@@ -1,0 +1,61 @@
+.box-img{
+    overflow: hidden;
+    position: relative;
+    &::before{
+        content:'';
+        display: block;
+        padding-top:100%;
+    }
+    &__inner{
+        position: absolute;
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
+        background-position: center;
+        background-size:cover;
+    }
+
+    &--11::before{
+        padding-top:100%;
+    }
+    &--21::before{
+        padding-top:50%;
+    }
+    &--12::before{
+        padding-top:200%;
+    }
+    &--43::before{
+        padding-top:75%;
+    }
+    &--other::before{
+        padding-top: (620/465)*100%;
+    }
+    &--other-reverse::before{
+        padding-top: (465/620)*100%;
+    }
+    &--other-2::before{
+        padding-top: (583/875)*100%;
+    }
+    &--other-3::before{
+        padding-top:(349/465)*100%;
+    }
+
+    &--size100{
+        width: 100%;
+    }
+    &--size875{
+        max-width:87.5rem;
+    }
+    &--size620{
+        max-width:62rem;
+    }
+    &--size465{
+        max-width:46.5rem;
+    }
+    &--size-s{
+        @include screen(phone){
+            max-width: 100%;
+        }
+    }
+}

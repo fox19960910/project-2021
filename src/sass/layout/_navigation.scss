@@ -1,0 +1,119 @@
+.nav{
+    flex:1;
+    &--header{
+        @include screen(phone){
+            display: none;
+        }
+    }
+    &__list{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    &__item{
+        &:not(:last-child){
+            margin-right:4rem;
+        }
+    }
+    &__link{
+        font-weight: 700;
+        color:$color-dark
+    }
+    &__link--white{
+        color:$color-white;
+    }
+
+
+    &--mobile{
+        position: fixed;
+        z-index: 100;
+        top:0;
+        background-color:$color-bg;
+        right:0;
+        width:30rem;
+        height: 100vh;
+       
+        padding-top: 11rem;
+        visibility: hidden;
+        opacity: 0;
+        &.deactive{
+            transition: all 0.5s ease-in-out;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateX(100%);
+        }
+        &.active{
+            opacity: 1;
+            visibility: visible;
+            animation: moveIn 0.5s;
+        }
+        &__list{
+            flex-direction: column;
+            align-items: flex-end;
+            padding-top: 3rem;
+            padding-right:4rem;
+        }
+        &__list li{
+            margin-right: 0 !important;
+            margin-bottom: 2rem;
+        }
+    }
+}
+
+.nav-social{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    &__link{
+        &:not(:last-child){
+            margin-right:4.5rem;
+        }
+    }
+}
+.hamburger{
+    display: none;
+    
+    @include screen(phone){
+        display: flex;
+    }
+    &__line{
+        position: relative;
+        &, &::after,&::before{
+        width: 3rem;
+        height:2px;
+        background-color:$color-dark;
+        display: inline-block;
+        }
+        &::after,&::before{
+            content:"";
+            position: absolute;
+            left:0;
+            transition: 0.2s;
+        }
+        &::after{
+            top:1rem;
+        }
+        &::before{
+            top:-1rem;
+        }
+    }
+    &.active{
+        position: fixed;
+        top: 60px;
+        right: 30px;
+        z-index: 100;
+    }
+    &.active &__line{
+        background-color: transparent;
+    }
+
+    &.active &__line::after{
+        top:0;
+        transform:rotate(-135deg);
+    }
+    &.active &__line::before{
+        top:0;
+        transform:rotate(135deg);
+    }
+
+}

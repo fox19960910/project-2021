@@ -1,0 +1,61 @@
+.container-full{
+    width:100%;
+    margin:0 auto;
+}
+.container{
+    width:$desktopScreen;
+    margin:0 auto;
+    @include screen(tab-landscape){
+        width: 90%;
+    }
+    
+}
+.row{
+    // margin: 0 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    margin:0 -1.5rem;
+    @include screen(tab-portrait){
+        &:not(:last-child){
+            margin-bottom:3rem;
+        }
+
+     }
+}
+[class^="col-"]{
+    margin-bottom:3rem;
+    padding: 0 1.5rem;
+    @include screen(phone){
+        padding: 0 2rem;
+     }
+}
+//col normal
+@for $i from 1 through 8 {
+    .col-#{$i}{
+        flex : 0 0 calc((100%/8)*#{$i})
+    }
+}
+//col large screen
+@include screen(tab-landscape){
+    @for $i from 1 through 8 {
+        .col-l-#{$i}{
+            flex : 0 0 calc((100%/8)*#{$i})
+        }
+    }
+}
+//col medium screen
+@include screen(tab-portrait){
+    @for $i from 1 through 8 {
+        .col-m-#{$i}{
+            flex : 0 0 calc((100%/8)*#{$i})
+        }
+    }
+}
+//col small screen 
+@include screen(phone){
+    @for $i from 1 through 8 {
+        .col-s-#{$i}{
+            flex : 0 0 calc((100%/8)*#{$i})
+        }
+    }
+}

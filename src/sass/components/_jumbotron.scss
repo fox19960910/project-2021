@@ -1,0 +1,39 @@
+.jumbotron{
+    padding-top:0;
+    &__text{
+        margin-bottom: 3.9rem;
+    }
+    &__desc{
+        font-size:2rem;
+        line-height: 2.8rem;
+        @include screen(phone){
+            width: 80%;
+        }
+        @media screen and (max-width:450px){
+            font-size: 1.6rem;
+        }
+    }
+
+    &__1,&__2{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__1{
+        align-items: flex-end;
+    }
+    &__2{
+        margin-top:35px;
+        align-items: center;
+    }
+    &__break{
+        @include screen(phone){
+            display: none;
+        }
+    }
+
+}
+.year{
+    font-size:2rem;
+    line-height: 2.8rem;
+    color:$color-dark;
+}

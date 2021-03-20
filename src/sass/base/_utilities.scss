@@ -1,0 +1,228 @@
+//flex
+.u-flex{
+    display: flex;
+}
+.u-flex-w{
+    flex-wrap: wrap;
+}
+.u-flex-nw{
+    flex-wrap: nowrap;
+}
+.u-inline-flex{
+    display: inline-flex;
+}
+.u-justify-content-center{
+    justify-content: center;
+}
+.u-justify-content-start{
+    justify-content: flex-start;
+}
+.u-justify-content-right{
+    justify-content: flex-end;
+}
+.u-align-items-end{
+    align-items: flex-end;
+}
+.u-flex-col{
+    flex-direction: column;
+}
+.u-flex-row{
+    flex-direction: row;
+}
+//color
+.u-color-white{
+    color:#fff;
+}
+.u-color-dark{
+    color:#000;
+}
+.u-color-primary{
+    color:$color-primary;
+}
+.u-m-none{
+    @include screen(tab-portrait){
+        display: none;
+    }
+}
+.u-s-none{
+    @include screen(phone){
+        display: none;
+    }
+}
+//background
+
+//margin, padding
+@for $i from 1 through 12 {
+    .mt-#{$i}{
+       margin-top:#{$i}rem;
+    }
+}
+@for $i from 1 through 12 {
+    .mb-#{$i}{
+       margin-bottom:#{$i}rem;
+    }
+}
+@for $i from 1 through 12 {
+    .mr-#{$i}{
+       margin-right:#{$i}rem;
+    }
+}
+@for $i from 1 through 12 {
+    .ml-#{$i}{
+       margin-left:#{$i}rem;
+    }
+}
+@include screen(tab-landscape){
+    @for $i from 1 through 12 {
+        .mt-l-#{$i}{
+           margin-top:#{$i}rem;
+        }
+    }
+    @for $i from 1 through 12 {
+        .mb-l-#{$i}{
+           margin-bottom:#{$i}rem;
+        }
+    }
+    @for $i from 1 through 12 {
+        .mr-l-#{$i}{
+           margin-right:#{$i}rem;
+        }
+    }
+    @for $i from 1 through 12 {
+        .ml-l-#{$i}{
+           margin-left:#{$i}rem;
+        }
+    }
+}
+@include screen(tab-portrait){
+    @for $i from 1 through 12 {
+        .mt-m-#{$i}{
+           margin-top:#{$i}rem;
+        }
+    }
+    @for $i from 1 through 12 {
+        .mb-m-#{$i}{
+           margin-bottom:#{$i}rem;
+        }
+    }
+    @for $i from 1 through 12 {
+        .mr-m-#{$i}{
+           margin-right:#{$i}rem;
+        }
+    }
+    @for $i from 1 through 12 {
+        .ml-m-#{$i}{
+           margin-left:#{$i}rem;
+        }
+    }
+}
+@include screen(phone){
+    @for $i from 1 through 12 {
+        .mt-s-#{$i}{
+           margin-top:#{$i}rem;
+        }
+    }
+    @for $i from 1 through 12 {
+        .mb-s-#{$i}{
+           margin-bottom:#{$i}rem;
+        }
+    }
+    @for $i from 1 through 12 {
+        .mr-s-#{$i}{
+           margin-right:#{$i}rem;
+        }
+    }
+    @for $i from 1 through 12 {
+        .ml-s-#{$i}{
+           margin-left:#{$i}rem;
+        }
+    }
+}
+
+// padding
+@for $i from 1 through 12 {
+    .pt-#{$i}{
+       padding-top:#{$i}rem;
+    }
+}
+@for $i from 1 through 12 {
+    .pb-#{$i}{
+       padding-bottom:#{$i}rem;
+    }
+}
+@for $i from 1 through 12 {
+    .pr-#{$i}{
+       padding-right:#{$i}rem;
+    }
+}
+@for $i from 1 through 12 {
+    .pl-#{$i}{
+       padding-left:#{$i}rem;
+    }
+}
+@include screen(tab-landscape){
+    @for $i from 1 through 12 {
+        .pt-l-#{$i}{
+           padding-top:#{$i}rem;
+        }
+    }
+    @for $i from 1 through 12 {
+        .pb-l-#{$i}{
+           padding-bottom:#{$i}rem;
+        }
+    }
+    @for $i from 1 through 12 {
+        .pr-l-#{$i}{
+           padding-right:#{$i}rem;
+        }
+    }
+    @for $i from 1 through 12 {
+        .pl-l-#{$i}{
+           margin-left:#{$i}rem;
+        }
+    }
+}
+@include screen(tab-portrait){
+    @for $i from 1 through 12 {
+        .pt-m-#{$i}{
+           padding-top:#{$i}rem;
+        }
+    }
+    @for $i from 1 through 12 {
+        .pb-m-#{$i}{
+           padding-bottom:#{$i}rem;
+        }
+    }
+    @for $i from 1 through 12 {
+        .pr-m-#{$i}{
+           padding-right:#{$i}rem;
+        }
+    }
+    @for $i from 1 through 12 {
+        .pl-m-#{$i}{
+           padding-left:#{$i}rem;
+        }
+    }
+}
+@include screen(phone){
+    @for $i from 1 through 12 {
+        .pt-s-#{$i}{
+           padding-top:#{$i}rem;
+        }
+    }
+    @for $i from 1 through 12 {
+        .pb-s-#{$i}{
+           padding-bottom:#{$i}rem;
+        }
+    }
+    @for $i from 1 through 12 {
+        .pr-s-#{$i}{
+           padding-right:#{$i}rem;
+        }
+    }
+    @for $i from 1 through 12 {
+        .pl-s-#{$i}{
+           padding-left:#{$i}rem;
+        }
+    }
+}

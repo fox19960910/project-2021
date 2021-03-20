@@ -1,0 +1,19 @@
+.header{
+    padding-top:6rem;
+    padding-bottom: 5rem;
+    &__wrap{
+        display: flex;
+        align-items: center;
+        @include screen(phone){
+            justify-content: space-between;
+        }
+    }
+}
+.logo{
+    display: block;
+    width:176px;
+    height: auto;
+}
+.logo-white img{
+    filter: brightness(0) invert(1);
+}

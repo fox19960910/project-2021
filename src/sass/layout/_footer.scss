@@ -1,0 +1,58 @@
+.footer{
+    background-color:$color-dark;
+    padding: 8rem 0;
+    &__wrap{
+        display: flex;
+        align-items: center;
+        margin-bottom: 3.5rem;
+        @include screen(phone){
+            flex-direction: column;
+        }
+
+        .logo{
+            margin-bottom: 2rem;
+        }
+        .nav{
+            @media screen and (max-width:450px){
+                display: none;
+            }
+        }
+    }
+    &__sub{
+        small{
+            line-height: 24px;
+        }
+    }
+    &__subcription{
+        display: flex;
+        align-items: center;
+        @include screen(phone){
+            margin-bottom: 2rem;
+        }
+        @media screen and (max-width:450px){
+            flex-direction: column;
+        }
+    }
+    &__subcription button {
+        margin-left:1.6rem;
+        @media screen and (max-width:450px){
+            margin-left:0;
+            width: 100%;
+            margin-top: 2rem;
+        }
+    }
+    &__subcription input {
+        max-width: 31rem;
+        @include screen(phone){
+            max-width: 100%;
+        }
+    }
+    &__subcription small{
+        display: none;
+        color:$color-white;
+        text-transform: uppercase;
+        @media screen and (max-width:450px){
+          display: inline;
+        }
+    }
+}

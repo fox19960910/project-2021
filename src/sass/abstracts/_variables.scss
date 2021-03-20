@@ -1,0 +1,39 @@
+//font
+$default-font-size:1.6rem;
+//transition
+$transition-3s: all 0.3s ease-in-out;
+//grid
+$desktopScreen: (1240/1440)*100%;
+$landscapScreen: 96rem;
+$portraitScreen: 70rem;
+
+$gutter-vertical:3rem;
+$gutter-vertical-small:6rem;
+$gutter-horizontal:6rem;
+
+//shadow
+$shadow-light: 0 1.5rem 4rem rgba(#000,0.2);
+$shadow-dark: 0 1.5rem 4rem rgba(#000,0.6);
+
+
+//color
+$color-primary:#0984e3;
+$color-primary-light:#74b9ff;
+$color-primary-dark: #0652DD;
+
+$color-secondary:#29bdff;
+$color-secondary-light:#fab1a0;
+$color-secondary-dark:#e17055;
+
+$color-tertiary-light:#add478;
+$color-tertiary-dark:#9ad34b;
+$color-tertiary-3:#f49f77;
+
+$color-grey-light: #f7f7f7;
+$color-grey-light-2:#a1a1a1;
+$color-grey-light-3:#f4f4f4;
+$color-grey-dark: #333333;
+$color-grey-dark-2:#666666;
+$color-bg:#E5E5E5;
+$color-white:#fff;
+$color-dark:#1B1B1B;

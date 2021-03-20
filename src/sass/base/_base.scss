@@ -1,0 +1,32 @@
+/* general setting */
+*,
+*:after,
+*:before{
+    padding: 0;
+    margin:0;
+    box-sizing: inherit;
+}
+html{
+    scroll-behavior:smooth;
+    font-size:62.5%;
+    @include screen(tab-landscape){
+        font-size:56.25% !important;
+    }
+    @include screen(tab-portrait){
+        font-size:50% !important;
+    }
+   
+}
+body{
+    box-sizing: border-box;
+    background-color:$color-bg;
+}
+ul{
+    list-style-type: none;
+}
+a,a:link,a:visited{
+    text-decoration: none;
+}
+button{
+    cursor: pointer;
+}    

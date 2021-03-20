@@ -1,0 +1,35 @@
+.btn{
+    font-size:2rem;
+    line-height: 2.5rem;
+    padding:2rem 2.4rem;
+    background-color:transparent;
+    border:2px solid $color-dark;
+    font-weight: 700;
+    min-width: 31rem;
+    &--icon{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+    }
+    &--100{
+        width: 100%;
+    }
+    &--small{
+        min-width: unset; 
+    }
+    &--white{
+        border-color: $color-white;
+    }
+    &--white img{
+        filter: brightness(0) invert(1);
+    }
+}
+.arrow-btn{
+    cursor: pointer;
+    @media screen and (max-width:450px){
+      img{
+          width: 70%;
+      } 
+    }
+}

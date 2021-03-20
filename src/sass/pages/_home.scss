@@ -1,0 +1,114 @@
+section{
+    padding-top: 16rem;
+    @include screen(tab-portrait){
+        padding-top: 12rem;
+    }
+    @include screen(phone){
+        padding-top: 10rem;
+    }
+}
+.about{
+
+
+
+    &__boxWrap{
+        display: flex;
+        align-items: center;
+        margin-bottom: 6.9rem;
+    }
+    &__box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        &:first-child{
+            margin-right:70px;
+        }
+        p{
+            margin-bottom: -1rem;
+        }
+    }
+
+    &__desc{
+        margin-top:64px;
+        font-weight: 400;
+    }
+}
+
+
+
+.help{
+    &__info{
+        max-width: 31.5rem;
+        @include screen(phone){
+            max-width: 100%;
+            margin-bottom: 4.8rem;
+        }
+    }
+    &__info h2{
+        margin-bottom: 9rem;
+        @include screen(phone){
+            margin-bottom:3rem;
+        }
+    }
+    &__action input{
+        margin-bottom: 3.5rem;
+    }
+}
+
+.vision{
+    &__info{
+        max-width: 31.5rem;
+        @include screen(tab-portrait){
+            max-width: 100%;
+        }
+    }
+    &__info h2{
+        margin-bottom: 3.2rem;
+    }
+    &__desc{
+        margin-bottom: 5rem;
+        color:$color-grey-dark;
+        font-weight: 400;
+    }
+
+    &__img{
+        height: 100%;
+        img{
+            width:100%;
+            height: 100%;
+            display: block;
+            margin:auto;
+        }
+    }
+}
+
+.feature{
+    h3{margin-bottom:1.6rem;}
+    h2{margin-bottom:6.4rem}
+
+    &__banner{margin-bottom:6.4rem}
+
+    &__desc{
+        width:(620/1240)*100%;
+        text-align: center;
+        margin:0 auto;
+        margin-bottom: 6.4rem;
+    }
+}
+
+.project{   
+    padding-left:(100/1440)*100%;
+    &__wrap{
+        overflow: hidden;
+    }
+    &__img{
+        margin-bottom: 3.2rem;
+    }
+
+    h3{
+        margin-bottom: 5px;
+    }
+    h4{
+        margin-bottom:4.8rem;
+    }
+}
