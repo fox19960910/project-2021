@@ -1,0 +1,8 @@
+@font-face {
+    font-family: "Centra No2";
+    src: url(../font/CentraNo2-Black.ttf), url(../font/CentraNo2-BlackItalic.ttf), url(../font/CentraNo2-Bold.ttf), url(../font/CentraNo2-BoldItalic.ttf), url(../font/CentraNo2-Book.ttf), url(../font/CentraNo2-BookItalic.ttf), url(../font/CentraNo2-Extrabold.ttf), url(../font/CentraNo2-ExtraboldItalic.ttf), url(../font/CentraNo2-Hairline.ttf), url(../font/CentraNo2-HairlineItalic.ttf), url(../font/CentraNo2-Light.ttf), url(../font/CentraNo2-LightItalic.ttf), url(../font/CentraNo2-Medium.ttf), url(../font/CentraNo2-MediumItalic.ttf), url(../font/CentraNo2-Thin.ttf), url(../font/CentraNo2-ThinItalic.ttf), ;
+}
+
+body {
+    font-family: "Centra No2";
+}
